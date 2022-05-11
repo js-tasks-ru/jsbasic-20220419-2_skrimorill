@@ -1,3 +1,8 @@
 function getMinMax(str) {
-  // ваш код...
+let arr =  str.split(' ').filter(elem => !isNaN(elem))
+let result = {
+  min: Math.min(...arr),
+  max: Math.max(...arr),
+}
+return result
 }
