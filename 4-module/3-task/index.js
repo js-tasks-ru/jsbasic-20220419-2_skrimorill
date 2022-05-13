@@ -1,3 +1,6 @@
 function highlight(table) {
-  // ваш код...
+  
 }
+
+let ss = document.querySelector('table')
+console.log(ss);
