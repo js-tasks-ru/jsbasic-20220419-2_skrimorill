@@ -11,4 +11,3 @@ for (let elem of friends) {
 return ul
 }
 
-makeFriendsList(friends)
