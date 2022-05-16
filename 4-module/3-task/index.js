@@ -3,9 +3,6 @@ const SECOND_COLUMN = 2;
 const THIRD_COLUMN = 3;
 
 function highlight(table) {
-<<<<<<< HEAD
-  
-=======
   const actions = {
     [THIRD_COLUMN]: (root, td) => {
       if (td.dataset.available === 'true') {
@@ -41,8 +38,5 @@ function highlight(table) {
       }
     });
   }
->>>>>>> 1913c9c3b0f4745fc3cea9b7f812ab5d29d1cdf2
 }
 
-let ss = document.querySelector('table')
-console.log(ss);
