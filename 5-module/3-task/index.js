@@ -1,6 +1,6 @@
 function initCarousel() {
-  let rightArrow = document.querySelector('.carousel__arrow_right')
-  let leftArrow = document.querySelector('.carousel__arrow_left')
+  let right = document.querySelector('.carousel__arrow_right')
+  let left = document.querySelector('.carousel__arrow_left')
   let slideInner = document.querySelector('.carousel__inner')
   let slides = document.querySelectorAll('.carousel__slide')
   let slideWidth = slideInner.offsetWidth
@@ -8,7 +8,7 @@ function initCarousel() {
   let index = 1
 
 
-  leftArrow.addEventListener('click', function() {
+  left.addEventListener('click', function() {
     index--
     if(index >= count) {
       index = count
@@ -17,7 +17,7 @@ function initCarousel() {
   })
 
 
-rightArrow.addEventListener('click', function() {
+right.addEventListener('click', function() {
   index++
   if(index <= 1) {
     index = 1
@@ -34,17 +34,17 @@ slideMove = () => {
 
  buttonHidden = () => {
   if (index === 1) {
-    leftArrow.style.display = 'none'
+    left.style.display = 'none'
   }
   else {
-    leftArrow.style.display = ''
+    left.style.display = ''
   }
 
   if (index === count) {
-    rightArrow.style.display = 'none'
+    right.style.display = 'none'
   }
   else {
-    rightArrow.style.display = ''
+    right.style.display = ''
   }
 }
 slideMove()
