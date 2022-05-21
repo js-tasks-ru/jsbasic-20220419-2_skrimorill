@@ -1,4 +1,5 @@
 function initCarousel() {
+
   let right = document.querySelector('.carousel__arrow_right')
   let left = document.querySelector('.carousel__arrow_left')
   let slideInner = document.querySelector('.carousel__inner')
@@ -49,4 +50,5 @@ slideMove = () => {
 }
 slideMove()
 }
+
 
